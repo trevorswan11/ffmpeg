@@ -15,8 +15,24 @@ Retrieving your own libraries:
     --disable-shared \
     --disable-programs \
     --disable-doc \
+    --disable-debug \
+    --disable-avdevice \
     --enable-gpl \
     --enable-version3 \
     --enable-videotoolbox \
     --enable-audiotoolbox
+```
+- The static libraries on windows are compiled manually from source with the configuration:
+```shell
+./configure \
+    --prefix="$(pwd)/../ffmpeg_static_output" \
+    --enable-static \
+    --disable-shared \
+    --disable-programs \
+    --disable-debug \
+    --disable-doc \
+    --disable-avdevice \
+    --enable-gpl \
+    --enable-version3 \
+    --arch=x86_64
 ```
