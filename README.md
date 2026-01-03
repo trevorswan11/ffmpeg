@@ -35,4 +35,21 @@ Retrieving your own libraries:
     --enable-gpl \
     --enable-version3 \
     --arch=x86_64
+    --disable-mf \
+    --disable-encoder=mf \
+    --disable-decoder=mf \
+    --disable-muxer=mf \
+    --disable-dxva2 \
+    --disable-d3d11va \
+    --disable-d3d12va \
+    --disable-indev=dshow \
+    --disable-indev=vfwcap \
+    --disable-indev=gdigrab \
+    --disable-indev=ddagrab \
+    --disable-outdev=sdl2 \
+    --disable-cuda \
+    --disable-cuvid \
+    --disable-nvenc \
+    --disable-nvdec \
+    --disable-postpro
 ```
